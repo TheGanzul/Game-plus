@@ -99,6 +99,7 @@ nav .mobile .header{
     text-align: center;
     justify-content: space-between;
     flex-direction: row;
+
     background-color: black;
 }
 
@@ -115,6 +116,8 @@ nav .mobile .header a{
 nav .mobile .header #bmenu{
     border: none;
     background-color: transparent;
+    cursor: pointer;
+
     color: white;
 }
 
@@ -133,14 +136,10 @@ nav .mobile .links a {
     text-decoration: none;
 
     color: white;
+    background-color: #221F35;
 }
 
 nav .mobile .links a:hover {
-    font-size: 20px;
-    display:  block;
-    padding: 10px 20px;
-    text-decoration: none;
-
     color:black;
     background-color: white;
 }
@@ -150,23 +149,28 @@ nav .mobile .links a:hover {
 ------------------------*/
 header{
     background-image: url(../img/fondo\ halo\ transparente.png);
-    background-size: center;
+    background-size: cover;
     background-position: center center;
     height: 100vh;
 }
 
 /*MEDIA QUERIES*/
 
-@media screen and (max-width: 646px) {
+@media screen and (max-width: 680px) {
     nav .link-hide {
         display: none;
     }
     nav .more{
         display: flex;
     }
+    header{
+    
+        height: 70vh;
+    }
+
 }
 
-@media screen and (max-width: 552px) {
+@media screen and (max-width: 586px) {
     nav{
         width: 100%;
         padding: 0;
@@ -179,4 +183,9 @@ header{
     nav .mobile {
         display: block;
     }
+    header{
+    
+        height: 50vh;
+    }
+
 }
