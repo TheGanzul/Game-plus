@@ -25,14 +25,14 @@ if ($conexion){
     if($execute){
         echo '
         <script>
-            window.location ="../index.html";
+            window.location ="../../index.html";
         </script>
         ';
     }else{
         echo  '
         <script>
             alert("try again, user not saved");
-            window.location ="../index.html";
+            window.location ="register.php";
         </script>
         ';
 

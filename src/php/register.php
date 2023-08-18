@@ -7,7 +7,7 @@
 	<title>Registro</title>
 	<link 
 		rel="stylesheet" 
-		href="../src/css/styleregister.css"
+		href="../css/styleregister.css"
 	/>
 	
 </head>
