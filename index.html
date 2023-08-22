@@ -15,69 +15,147 @@
         href="src/css/main.css"
     />
 </head>
-<div id="main-container">
-    <header>
-        <nav>
-            <div class="mobile">
-                <div class="header">
-                    <button id="bmenu">
-                        <span class="material-symbols-outlined"> &#xe5d2 </span>
-                    </button>
+<body>
+    <div id="main-container">
+        <header>
+            <nav>
+                <div class="mobile">
+                    <div class="header">
+                        <button id="bmenu">
+                            <span class="material-symbols-outlined"> &#xe5d2 </span>
+                        </button>
 
-                    <a href="#"><img src="src/img/LOGO1.png" width ="100"></a>
+                        <a href="#"><img src="src/img/LOGO1.png" width ="100"></a>
 
-                    <div>
-                        <a href="#"><span class="material-symbols-outlined"> &#xe8b6</span> </a>
-                        <a href="#"><span class="material-symbols-outlined"> &#xe7fd</span> </a>
+                        <div>
+                            <a href="#"><span class="material-symbols-outlined"> &#xe8b6</span> </a>
+                            <a href="#"><span class="material-symbols-outlined"> &#xe7fd</span> </a>
+                        </div>
                     </div>
-                </div>
 
-                <div class="links">
-                    <a href="#">Games</a>
-                    <a href="#">New & sales</a>
-                    <a href="#"> Help</a>
-                    <a href="#"> About us</a>
-                    <a href="#"> Sreach</a>
-                </div>
-            </div>
-
-            <ul>
-                <li><a href="#"><img src="src/img/LOGO1.png" width ="100"  -10px></a></li>
-                <li><a href="#"class="link">Games</a></li>
-                <li><a href="#"class="link">New & sales</a></li>
-                <li><a href="#"class="link link-hide"> Help</a></li>
-                <li><a href="#"class="link link-hide"> About us</a></li>
-                <li class="more">
-                    <a href="#" class="link" id="bmore">More</a>
-                    <div class="menu">
+                    <div class="links">
+                        <a href="#">Games</a>
+                        <a href="#">New & sales</a>
                         <a href="#"> Help</a>
                         <a href="#"> About us</a>
+                        <a href="#"> Sreach</a>
                     </div>
-            </ul>
+                </div>
 
-            <ul>
-                <li><a href="src/php/register.php" class="links">Login</a></li>
-                <li><a href="#" class="links">Sreach</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section id="videos">
-        <div id="slider">
+                <ul>
+                    <li><a href="#"><img src="src/img/LOGO1.png" width ="100"  -10px></a></li>
+                    <li><a href="#"class="link">Games</a></li>
+                    <li><a href="#"class="link">New & sales</a></li>
+                    <li><a href="#"class="link link-hide"> Help</a></li>
+                    <li><a href="#"class="link link-hide"> About us</a></li>
+                    <li class="more">
+                        <a href="#" class="link" id="bmore">More</a>
+                        <div class="menu">
+                            <a href="#"> Help</a>
+                            <a href="#"> About us</a>
+                        </div>
+                </ul>
 
-            <div id="current"></div>
+                <ul>
+                    <li><a href="src/php/register.php" class="links">Login</a></li>
+                    <li><a href="#" class="links">Sreach</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="videos">
+            <div id="slider">
+                <div id="current"></div>
+                <div id="controls">
+                    <button id="prev">
+                    <span class="material-symbols-outlined">&#xe408;</span>
+                    </button>
+                    <button id="next">
+                    <span class="material-symbols-outlined">&#xe409;</span>
+                    </button>
+                </div>
+            </div>
+        </section>
 
-          <div id="controls">
-            <button id="prev">
-              <span class="material-symbols-outlined">&#xe408;</span>
-            </button>
-            <button id="next">
-              <span class="material-symbols-outlined">&#xe409;</span>
-            </button>
-          </div>
+        <section id="free-games">
+            <div class="Title">
+                Free Games 
+            </div>
+            <div id="control-game">
+                <button id="prev-game">
+                    <span class="material-symbols-outlined">&#xe408;</span>
+                </button>
+                <button id="next-game">
+                    <span class="material-symbols-outlined">&#xe409;</span>
+                </button>
+            </div>
+            <div class="gamescontainer">
+                
+                <div class="poster" >
+                    <a href="#">
+                        <img src="/src/img/FREE GAMES/FORNITE.png" alt="img">
+                        <div>
+                            <h3>Fornite</h3>
+                            <p>Epic Games</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="poster">
+                    <a href="#">
+                        <img src="/src/img/FREE GAMES/COUNTER STRIKE GLOBAL OFENSIVE.png" alt="img">
+                        <div>
+                            <h3>Counter Strike</h3>
+                            <p>desarrolladora </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="poster">
+                    <a href="#">
+                        <img src="/src/img/FREE GAMES/DOTA 2.png" alt="img">
+                        
+                            <h3>Dota 2</h3>
+                            <p> desarrolladora</p>
+                        
+                    </a>
+                </div>
+                <div class="poster">
+                    <a href="#">
 
-        </div>
-    </section>
-</div>
-<script src="src/js/main.js"></script>
+                        <img src="/src/img/FREE GAMES/LEAGE OF LEGENDS.png" alt="img">
+                        <div>
+                            <h3>Leage of Legends</h3>
+                            <p> desarrolladora</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="poster">
+                    <a href="#">
+                        <img src="/src/img/FREE GAMES/Genshin Impact.png" alt="img">
+                        <div>
+                            <h3>Genshin Impact</h3>
+                            <p> desarrolladora</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="poster">
+                    <a href="#">
+                        <img src="/src/img/FREE GAMES/ASPHALT LEGENDS.png" alt="img" >
+                        <div>
+                            <h3>Asphalt Legends</h3>
+                            <p> desarrolladora</p>
+                        </div>
+                </div>
+                <div class="poster" >
+                    <a href="#">
+                        <img src="/src/img/FREE GAMES/VALORANT.png" alt="img" >
+                        <div>
+                            <h3>Valorant</h3>
+                            <p> desarrolladora</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="src/js/main.js"></script>
 </body>
 </html>

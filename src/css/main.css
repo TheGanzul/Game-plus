@@ -1,5 +1,8 @@
 *{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
 
 }
 body {
@@ -158,13 +161,12 @@ header{
 }
 
 /*----------------------
-VIDEOS
+SECTION VIDEOS
 ----------------------*/
 #videos {
     align-content: center;
-    padding: 50px 0;
-
-    
+    padding: 0;
+    background-color: #0b1149;
 }
 
 #current {
@@ -172,13 +174,12 @@ VIDEOS
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80vw; /* Ajustar el ancho según tus necesidades */
-    height: 45vw; /* Mantener proporción 16:9 */
+    width: 80vw; 
+    height: 37vw;
     overflow: hidden;
     max-height: 730px;
     max-width: 1300px;
     z-index: 2;
-
 }
 
 #current iframe {
@@ -196,18 +197,17 @@ VIDEOS
     width: 100%;
     align-items: center;
     justify-content: space-between;
-    padding: 0 1%;
+    padding: 0 3%;
     display: flex;
     z-index: 1;
 }
 
 #prev,
 #next {
-  
     background-color: rgba(58, 58, 58, 0.7);
     border: none;
     height: 50%;
-    width: 8%;
+    width: 4%;
     color: white;
     font-size: 24px;
     cursor: pointer;
@@ -216,13 +216,75 @@ VIDEOS
     justify-content: center;
     border-radius: 10px;
     transition: all 0.3s ease;
-
 }
 
 #videos #slider #controls #prev:hover,
 #videos #slider #controls #next:hover {
   background-color: rgb(37, 37, 37, 0.9);
 }
+
+
+/*----------------------
+POSTERS
+----------------------*/
+#free-games{
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    text-align: center;
+    background-color:#0b1149;
+}
+.Title{
+    font-size: 3vw;
+    font-weight: 1000;
+    font-family: 'Times New Roman', Times, serif;
+    color: aliceblue;
+}
+#control-game{
+    display: none;
+}
+.gamescontainer{
+    display: flex;
+    width: 100%;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: #000216;
+}
+.poster{
+      width: 10%;
+    margin: 1%;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-size: 1vw;
+    transition:all 400ms ease;
+    box-shadow: 0px 1px 10px #84858f7e;
+    background-color: #2344b1b7;
+}
+.poster:hover{
+    transform:translateY(-3%);
+    box-shadow: 1px 2px 20px #a2a4b9e7;
+    background-color: #2344b1e3;
+}
+.poster a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.poster img{
+    max-width: 100%;
+}
+.poster h3{
+    max-width: 100%;
+    font-weight: 900;
+    font-size: 1vw;
+    justify-content: center;
+    text-align: center;
+    height: 1%;
+}
+
+
 
 /*MEDIA QUERIES*/
 
@@ -267,4 +329,5 @@ VIDEOS
     #controls {
         top: 30%;
     }
+
 }
