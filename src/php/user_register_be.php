@@ -12,7 +12,7 @@ if ($conexion){
 */
 
 
-
+//Conección bd
     $user_name = $_POST['user_name'];
     $user_email = $_POST['user_email'];
     $user_pswd= $_POST['user_pswd'];
@@ -20,6 +20,42 @@ if ($conexion){
     $query ="INSERT INTO `users`(`user_name`, `user_email`, `user_pswd`) 
             VALUES ('$user_name','$user_email','$user_pswd')";
 
+//Verificar  repetidos
+
+$verify_email = mysqli_query($conection, "SELECT * FROM users WHERE user_email='$user_email' ");
+if(mysqli_num_rows($verify_email) > 0){
+    echo '
+        <script>
+            alert("This email is not available, please try again");
+            window.location = "../html/register.html";
+        </script>
+    ';
+    exit();
+}
+
+
+$verify_name = mysqli_query($conection, "SELECT * FROM users WHERE user_name ='$user_name' ");
+if(mysqli_num_rows($verify_name) > 0){
+    echo '
+        <script>
+            alert("This user name is not available, please try again");
+            window.location = "../html/register.html";
+        </script>
+    ';
+    exit();
+}
+
+$verify_pswd = "SELECT * FROM users WHERE user_name ='$user_name' ";
+if(mysqli_num_rows($verify_name) > 0){
+    echo '
+        <script>
+            alert("This user name is not available, please try again");
+            window.location = "../html/register.html";
+        </script>
+    ';
+    exit();
+}
+//Resultados
     $execute = mysqli_query($conection, $query);
 
     if($execute){
@@ -32,7 +68,7 @@ if ($conexion){
         echo  '
         <script>
             alert("try again, user not saved");
-            window.location ="register.php";
+            window.location ="../html/register.html";
         </script>
         ';
 
