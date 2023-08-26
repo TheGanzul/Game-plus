@@ -10,6 +10,8 @@
         rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
     <link 
         rel="stylesheet" 
         href="src/css/main.css"
@@ -76,92 +78,115 @@
             </div>
         </section>
 
-        <section id="free-games">
-            <div class="Title">
-                Free Games 
+        <section class="game-section" id="free-games">
+            <div class="section-title">
+                Free Games
             </div>
-            <div class="wrapper">
-                <div class="carousel">
-                  <div class="poster" >
-                      <a href="#">
-                          <img src="/src/img/FREE GAMES/FORNITE.png" alt="img">
-                          <div>
-                              <h3>Fornite</h3>
-                          </div>
-                      </a>
-                  </div>
-                  <div class="poster">
-                      <a href="#">
-                          <img src="/src/img/FREE GAMES/COUNTER STRIKE GLOBAL OFENSIVE.png" alt="img">
-                          <div>
-                              <h3>Counter Strike</h3>
-                          </div>
-                      </a>
-                  </div>
-                  <div class="poster">
-                      <a href="#">
-                          <img src="/src/img/FREE GAMES/DOTA 2.png" alt="img">
-                          
-                              <h3>Dota 2</h3>
-                      </a>
-                  </div>
-                  <div class="poster">
-                      <a href="#">
-          
-                          <img src="/src/img/FREE GAMES/LEAGE OF LEGENDS.png" alt="img">
-                          <div>
-                              <h3>Leage of Legends</h3>
-                          </div>
-                      </a>
-                  </div>
-                  <div class="poster">
-                      <a href="#">
-                          <img src="/src/img/FREE GAMES/Genshin Impact.png" alt="img">
-                          <div>
-                              <h3>Genshin Impact</h3>
-                          </div>
-                      </a>
-                  </div>
-                  <div class="poster">
-                      <a href="#">
-                          <img src="/src/img/FREE GAMES/ASPHALT LEGENDS.png" alt="img" >
-                          <div>
-                              <h3>Asphalt Legends</h3>
-                          </div>
-                  </div>
-                  <div class="poster" >
-                      <a href="#">
-                          <img src="/src/img/FREE GAMES/VALORANT.png" alt="img" >
-                          <div>
-                              <h3>Valorant</h3>
-                          </div>
-                      </a>
-                  </div>
-                </div>
-                <i id="right" class="fa-solid fa-angle-right"></i>
-            </div>
-        </section>
-        <section id="paid-games">
-            <div class="Title">
-                Paid Games 
-            </div>
-            <div id="control-game">
-                <button id="prev-game">
+            <div class="slider-container">
+                <button class="slider-button left" aria-label="Previous">
                     <span class="material-symbols-outlined">&#xe408;</span>
                 </button>
-                <button id="next-game">
+                <div class="slider">
+                    <div class="poster" >
+                        <a href="#">
+                            <img src="/src/img/FREE GAMES/FORNITE.png" alt="img">
+                            <div>
+                                <h3>Fornite</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="poster">
+                        <a href="#">
+                            <img src="/src/img/FREE GAMES/COUNTER STRIKE GLOBAL OFENSIVE.png" alt="img">
+                            <div>
+                                <h3>Counter Strike</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="poster">
+                        <a href="#">
+                            <img src="/src/img/FREE GAMES/DOTA 2.png" alt="img">
+                            
+                                <h3>Dota 2</h3>
+                        </a>
+                    </div>
+                    <div class="poster">
+                        <a href="#">
+            
+                            <img src="/src/img/FREE GAMES/LEAGE OF LEGENDS.png" alt="img">
+                            <div>
+                                <h3>Leage of Legends</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="poster">
+                        <a href="#">
+                            <img src="/src/img/FREE GAMES/Genshin Impact.png" alt="img">
+                            <div>
+                                <h3>Genshin Impact</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="poster">
+                        <a href="#">
+                            <img src="/src/img/FREE GAMES/ASPHALT LEGENDS.png" alt="img" >
+                            <div>
+                                <h3>Asphalt Legends</h3>
+                            </div>
+                    </div>
+                    <div class="poster" >
+                        <a href="#">
+                            <img src="/src/img/FREE GAMES/VALORANT.png" alt="img" >
+                            <div>
+                                <h3>Valorant</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="poster" >
+                        <a href="#">
+                            <img src="/src/img/FREE GAMES/VALORANT.png" alt="img" >
+                            <div>
+                                <h3>Valorant</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="poster" >
+                        <a href="#">
+                            <img src="/src/img/FREE GAMES/VALORANT.png" alt="img" >
+                            <div>
+                                <h3>Valorant</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="poster" >
+                        <a href="#">
+                            <img src="/src/img/FREE GAMES/VALORANT.png" alt="img" >
+                            <div>
+                                <h3>Valorant</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <button class="slider-button right" aria-label="Next">
                     <span class="material-symbols-outlined">&#xe409;</span>
                 </button>
             </div>
-            <div clss="slider-container">
-                <div class="carousel">
-                    
+        </section>
+       
+        <section class="game-section" id="paid-games">
+            <div class="section-title">
+                Paid Games
+            </div>
+            <div class="slider-container">
+                <button class="slider-button left" aria-label="Previous">
+                    <span class="material-symbols-outlined">&#xe408;</span>
+                </button>
+                <div class="slider">
                     <div class="poster" >
                         <a href="#">
                             <img src="/src/img/PAID GAMES/MINECRAFT-.png" alt="img">
                             <div>
                                 <h3>Minecraft</h3>
-                                <p>Mojang</p>
                             </div>
                         </a>
                     </div>
@@ -170,56 +195,76 @@
                             <img src="/src/img/PAID GAMES/HALO MASTERCHIEF COLECTION.png" alt="img">
                             <div>
                                 <h3>Halo Masterchief</h3>
-                                <p>desarrolladora </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="poster">
+                        <a href="#">
+                            <img src="/src/img/PAID GAMES/AGE OF EMPIRES II DEFIITIVE EDITION .png" alt="img">
+                            
+                                <h3>Age Of EMpires II</h3>
+                        </a>
+                    </div>
+                    <div class="poster">
+                        <a href="#">
+            
+                            <img src="/src/img/PAID GAMES/FIFA 22.png" alt="img">
+                            <div>
+                                <h3>Fifa 22</h3>
                             </div>
                         </a>
                     </div>
                     <div class="poster">
                         <a href="#">
                             <img src="/src/img/PAID GAMES/ARK SURVIVAL EVOLVED.png" alt="img">
-                            
-                                <h3>ARK Survival</h3>
-                                <p> desarrolladora</p>
-                            
-                        </a>
-                    </div>
-                    <div class="poster">
-                        <a href="#">
-
-                            <img src="/src/img/PAID GAMES/AGE OF EMPIRES II DEFIITIVE EDITION .png" alt="img">
                             <div>
-                                <h3>Age Of Empires II</h3>
-                                <p> desarrolladora</p>
+                                <h3>Ark S E</h3>
                             </div>
                         </a>
                     </div>
                     <div class="poster">
-                        <a href="#">
-                            <img src="/src/img/PAID GAMES/FIFA 22.png" alt="img">
-                            <div>
-                                <h3>Fifa 22</h3>
-                                <p> desarrolladora</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="poster">
-                        <a href="#">
-                            <img src="/src/img/PAID GAMES/DETROIT BECOME HUMAN.png" alt="img" >
-                            <div>
-                                <h3>Detroit B. Human</h3>
-                                <p> desarrolladora</p>
-                            </div>
-                    </div>
-                    <div class="poster" >
                         <a href="#">
                             <img src="/src/img/PAID GAMES/SUBNAUTICA.png" alt="img" >
                             <div>
                                 <h3>Subnautica</h3>
-                                <p> desarrolladora</p>
+                            </div>
+                    </div>
+                    <div class="poster" >
+                        <a href="#">
+                            <img src="/src/img/PAID GAMES/DETROIT BECOME HUMAN.png" alt="img" >
+                            <div>
+                                <h3>Detroit B H</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="poster" >
+                        <a href="#">
+                            <img src="/src/img/FREE GAMES/VALORANT.png" alt="img" >
+                            <div>
+                                <h3>Valorant</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="poster" >
+                        <a href="#">
+                            <img src="/src/img/FREE GAMES/VALORANT.png" alt="img" >
+                            <div>
+                                <h3>Valorant</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="poster" >
+                        <a href="#">
+                            <img src="/src/img/FREE GAMES/VALORANT.png" alt="img" >
+                            <div>
+                                <h3>Valorant</h3>
                             </div>
                         </a>
                     </div>
                 </div>
+                <button class="slider-button right" aria-label="Next">
+                    <span class="material-symbols-outlined">&#xe409;</span>
+                </button>
             </div>
         </section>
     </div>

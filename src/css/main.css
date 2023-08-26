@@ -209,10 +209,9 @@ SECTION VIDEOS
 #next {
     background-color: rgba(58, 58, 58, 0.7);
     border: none;
-    height: 50%;
     width: 4%;
     color: white;
-    font-size: 24px;
+    font-size: 1.15rem;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -230,129 +229,134 @@ SECTION VIDEOS
 /*----------------------
 POSTERS
 ----------------------*/
-#free-games{
-  
+/* Estilos generales */
+.game-section {
     padding: 0 35px 35px;
     align-items: center;
     text-align: center;
     justify-content: center;
-    background-color:#0b11499f;
+    background-color: #0b11499f;
     display: flex;
     flex-direction: column;
-    
-}
-
-.Title{
+  }
+  
+  .section-title {
     font-size: 3vw;
     font-weight: 1000;
     font-family: 'Times New Roman', Times, serif;
     color: aliceblue;
-}
-
-
-.wrapper{
+  }
+  
+  .slider-container {
     display: flex;
-    max-width: 100%;
+    max-width: 90%;
     position: relative;
-}
-  .wrapper i{
-    top: 50%;
-    height: 44px;
+  }
+  
+  .slider-button {
+    top: 40%;
+    height: 55px;
     width: 44px;
-
-}
-  .carousel.dragging{
+    padding: 3px 1px 0;
+    border: none;
+    position: absolute;
+    text-align: center;
+    color: white;
+    font-size: 1.15rem;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    display: none;
+    background-color: rgba(58, 58, 58, 0.7);
+  }
+  
+  .slider-button:hover {
+    background: #8c88c2c0;
+  }
+  
+  .left {
+    left: -50px;
+  }
+  
+  .right {
+    right: -50px;
+  }
+  
+  .slider {
+    font-size: 0px;
+    overflow: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    display: flex;
+    overflow-x: scroll;
+    overflow-x: hidden;
+    max-width: 100vw;
+  }
+  
+  .slider.dragging {
     cursor: grab;
     scroll-behavior: auto;
-}
-  .carousel.dragging img{
-    pointer-events: none;
-}
-  .carousel img{
+  }
+  
+  .slider img {
     width: 100%;
     object-fit: cover;
     user-select: none;
     margin-left: 14px;
-}
-  .carousel img:first-child{
-    margin-left: 0px;
-}
-.carousel {
-    display: flex;
-    overflow-x: scroll; 
-    max-width: 90ph; 
-
-}
-.poster {
-    flex: 0 0 15vw; 
-    margin: 1vw; 
-    width: 300px;
-
   }
-  .poster:hover{
-    transform:translateY(-3%);
+  
+  .slider img:first-child {
+    margin-left: 0px;
+  }
+  
+  .poster {
+    flex: 0 0 15vw;
+    margin: 1vw;
+    width: 300px;
+  }
+  
+  .poster:hover {
+    transform: translateY(-3%);
     box-shadow: 1px 2px 20px #a2a4b9e7;
     background-color: #272f49e3;
     border-radius: 5px;
-}
-.poster a {
+  }
+  
+  .poster a {
     text-decoration: none;
-}
-.poster img{
+  }
+  
+  .poster img {
     max-width: 100%;
     border-radius: 5px;
-}
-.poster h3{
+  }
+  
+  .poster h3 {
     max-width: 100%;
     font-weight: 900;
     font-size: 1.5vw;
     justify-content: center;
     text-align: center;
-    height: 1%;
     color: aliceblue;
-}
-
-
-
-
-/*MEDIA QUERIES*/
-
-@media screen and (max-width: 750px) {
-    nav .link-hide {
-        display: none;
-    }
-    nav .more{
-        display: flex;
-    }
-
-    header{
-        height: 70vh;
-    }
-
-    #current{
-        top: 40%;
-    }
-    #controls {
-        top: 40%;
-    }
-
-    .gamescontainer {
-        display: flex;
-        width: 100%;
-        overflow-x: scroll;
-        scroll-behavior: smooth;
-      }
-    
-      .poster {
-        flex: 0 0 30vw; 
-        margin: 0 1vw; 
-      }
+  }
   
-      .carousel{
-          max-width: 70vh;
-      }
-}
-
+  @media screen and (max-width: 900px) {
+    
+    .poster {
+      flex: 0 0 30vw; 
+      margin: 0 1vw; 
+    }
+  
+    .gfslider, .gpslider{
+        max-width: 70vh;
+    }
+  }
+  @media screen and (max-width: 550px) {
+    .gslider img{
+      width: 100%;
+    }
+  
+  }
 @media screen and (max-width: 650px) {
     nav{
         width: 100%;
