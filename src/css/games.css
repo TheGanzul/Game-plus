@@ -259,19 +259,16 @@ nav .mobile .links a:hover {
 }
 
   .read-more {
-    background-color: #00b7ff;
-    color: white;
-    height: 40px;
-    width: 10vw;
-    transform: rotateY(-50%);
-    font-size: 1.5vw;
-    font-size-adjust: ;
-    text-align: center;
+
+    margin-top: 5%; 
+    background-color: #00b7ff; 
+    color: white; 
+    padding: 1% 20px; 
+    border: none; 
+    cursor: pointer; 
     border-radius: 10px;
-    cursor: pointer;
-    padding: 3px 1px 0;
-    border: none;
-    transition: all 0.3s ease;
+    font-size: 16px;
+    font-weight: bold;
   }
 
   .read-more:hover {
