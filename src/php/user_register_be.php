@@ -34,7 +34,7 @@ if ($user_rpswd !== $user_pswd) {
     echo '
         <script>
             alert("Las contraseñas no coinciden, por favor inténtalo de nuevo");
-            window.location = "../html/register.html";
+            window.location = "register.php";
         </script>
     ';
     exit();
@@ -61,7 +61,7 @@ if ($execute) {
     echo  '
         <script>
             alert("Try again, user not saved");
-            window.location = "../html/register.html";
+            window.location = "register.php";
         </script>
     ';
 }

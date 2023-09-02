@@ -30,7 +30,7 @@ NAVBAR
 
 nav{
     display: flex;
-    align-items: center;
+
     justify-content: space-between;
     padding: 0 5%;
 }
@@ -40,12 +40,13 @@ nav ul{
     list-style: none;
     padding: 0;
     margin: 0;
+    align-items: center;
 }
 
 nav ul li > a{
     display: block;
     position: relative;
-    padding: 20px 15px 10px 15px;
+    padding: 10px 15px 10px 15px;
     text-decoration: none;
 
     color: white;
@@ -159,8 +160,8 @@ header{
     background-size: cover;
     background-position: bottom center;
     background-repeat: no-repeat;
-    height: 100vh;
-    background-image: url(../img/fondo\ halo\ transparente.png);
+    height: 80vh;
+    background-image: url(../img/index/fondo\ halo\ transparente.png);
 }
 
 /*----------------------
@@ -174,7 +175,7 @@ SECTION VIDEOS
 
 #current {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 80vw; 
@@ -195,7 +196,7 @@ SECTION VIDEOS
 
 #controls {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 0;
     width: 100%;
     align-items: center;
@@ -296,13 +297,16 @@ POSTERS
   .slider.dragging {
     cursor: grab;
     scroll-behavior: auto;
+    pointer-events:none;
   }
+ 
   
   .slider img {
     width: 100%;
     object-fit: cover;
     user-select: none;
     margin-left: 14px;
+    
   }
   
   .slider img:first-child {
@@ -312,7 +316,6 @@ POSTERS
   .poster {
     flex: 0 0 15vw;
     margin: 1vw;
-    width: 300px;
   }
   
   .poster:hover {
@@ -339,6 +342,7 @@ POSTERS
     text-align: center;
     color: aliceblue;
   }
+
   
   @media screen and (max-width: 900px) {
     
@@ -347,15 +351,35 @@ POSTERS
       margin: 0 1vw; 
     }
   
-    .gfslider, .gpslider{
+    .slider{
         max-width: 70vh;
     }
+
+    #current{
+      top: 35%;
+   }
+  #controls {
+      top: 35%;
+   }
   }
-  @media screen and (max-width: 550px) {
-    .gslider img{
-      width: 100%;
+
+@media screen and (max-width: 750px) {
+    nav .link-hide {
+        display: none;
     }
-  
+    nav .more{
+        display: flex;
+    }
+
+    header{
+        height: 70vh;
+    }
+    #current{
+      top: 30%;
+  }
+  #controls {
+      top: 30%;
+  }
   }
 @media screen and (max-width: 650px) {
     nav{
@@ -379,5 +403,10 @@ POSTERS
     #controls {
         top: 30%;
     }
+}
+@media screen and (max-width: 550px) {
+  .gslider img{
+    width: 100%;
+  }
 
 }
