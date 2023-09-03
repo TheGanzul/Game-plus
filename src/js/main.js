@@ -62,7 +62,7 @@ function renderCurrentVideo(id) {
     currentContainer.innerHTML = `<iframe width="100%" height="720" src="https://www.youtube.com/embed/${id}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
   }
 
-// Slider POSTER
+//POSTERS Slider para free games y paid games
 const sliderContainers = document.querySelectorAll('.slider-container'); //Selecciona los contenedores de sliders en la pagina y los almacena en la variable sliderContainers
 
 sliderContainers.forEach(container => {

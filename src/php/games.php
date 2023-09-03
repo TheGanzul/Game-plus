@@ -29,7 +29,7 @@ include("games_bd.php");
                             <span class="material-symbols-outlined"> &#xe5d2 </span>
                         </button>
 
-                        <a href="../../index.html"><img src="../img/LOGO1.png" width ="100"></a>
+                        <a href="../../index.html"><img src="../img/index/LOGO1.png" width ="100"></a>
 
                         <div>
                             <a href="#"><span class="material-symbols-outlined"> &#xe8b6</span> </a> <!--lupa-->
@@ -47,7 +47,7 @@ include("games_bd.php");
                 </div>
 
                 <ul>
-                    <li><a href="../../index.html"><img src="../img/LOGO1.png" width ="100"  -10px></a></li>
+                    <li><a href="../../index.html"><img src="../img/index/LOGO1.png" width ="100"  -10px></a></li>
                     <li><a href="#"class="link">Games</a></li>
                     <li><a href="#"class="link">New & sales</a></li>
                     <li><a href="#"class="link link-hide"> Help</a></li>
