@@ -15,8 +15,12 @@ body {
     margin: 0;
     line-height: 1.5;
 
-    background-color: rgb(37, 50, 121);
+    background-image: url(../img/index/fondo\ halo\ transparente.png);
+    background-size: cover;
+    background-position: bottom center;
+    background-repeat: no-repeat;
 }
+
 
 .show{
     display: flex !important;
@@ -33,6 +37,7 @@ nav{
 
     justify-content: space-between;
     padding: 0 5%;
+    background-image: url(../img/index/fondo\ halo\ transparente.png);
 }
 
 nav ul{
@@ -151,6 +156,11 @@ nav .mobile .links a {
 nav .mobile .links a:hover {
     color:black;
     background-color: white;
+}
+
+header{
+
+    background-image: url(../img/index/fondo\ halo\ transparente.png);
 }
 
 /*Banner */

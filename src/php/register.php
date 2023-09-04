@@ -9,17 +9,24 @@
 		rel="stylesheet" 
 		href="../css/styleregister.css"
 	/>
-	
+	<link 
+	rel="stylesheet"
+	href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+/>
 </head>
 <body>
-
+	<div class="back">
+		<a href="../../index.html"><span class="material-symbols-outlined">&#xe15e</span></a>
+	</div>
 	<div class="main">  	
+		
 		<input type="checkbox" id="chk" aria-hidden="true">
-
+			
 
 
 			<div class="login">
 				<form>
+					<a href="../../index.html"><img src="../img/index/LOGO1.png" width= "80"></a>
 					<label for="chk" aria-hidden="true">Login</label>
 					<input type="text" name="txt" placeholder="User name" required="">
 					<input type="password" name="pswd" placeholder="Password" required="">
